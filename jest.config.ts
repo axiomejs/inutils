@@ -11,7 +11,7 @@ export default {
     coverageProvider: 'v8',
     coverageThreshold: {
         global: {
-            lines: 95,
+            lines: 100,
         },
     },
 };
