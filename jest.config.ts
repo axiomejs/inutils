@@ -6,7 +6,7 @@ export default {
     clearMocks: true,
     collectCoverage: true,
     collectCoverageFrom: ['src/**'],
-    modulePathIgnorePatterns: ['lib'],
+    modulePathIgnorePatterns: ['lib', 'src/index.ts'],
     coverageDirectory: 'coverage',
     coverageProvider: 'v8',
     coverageThreshold: {
