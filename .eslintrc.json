@@ -22,6 +22,7 @@
         "prettier"
     ],
     "rules": {
+        "no-plusplus": "off",
         "header/header": [2, "line",
             [{
                 "pattern": " Copyright \\d{4} Octomatize",

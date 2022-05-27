@@ -1,11 +1,6 @@
-/**
- * Get a random number between min and range.
- * @param min number
- * @param range number
- * @returns number
- */
+// Copyright 2022 Octomatize
 function randomInt(min: number, range: number): number {
     return Math.floor(Math.random() * (range + 1) + min);
 }
 
-export { randomInt }
+export { randomInt };

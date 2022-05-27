@@ -1,8 +1,4 @@
-/**
- * Verify if the passed object is an array.
- * @param object unknown
- * @returns boolean
- */
+// Copyright 2022 Octomatize
 function isArray(object: unknown): boolean {
     return Array.isArray(object);
 }
@@ -13,18 +9,21 @@ function isArray(object: unknown): boolean {
  * @param specialCharacters boolean
  * @returns string
  */
-function randomString(length = 32, specialCharacters?: boolean): string {
-    let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789';
-    const specialChart = '!@#$%^&*()_-+={}[]:;<>?,./\|`~'
+function randomString(length: number, specialCharacters?: boolean): string {
+    let alphabet =
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789';
+    const specialChart = '!@#$%^&*()_-+={}[]:;<>?,./|`~';
     let finalString = '';
 
-    if (specialCharacters) alphabet = alphabet + specialCharacters;
+    if (specialCharacters) alphabet += specialChart;
 
-    for(let i = 0; i < length; i ++) {
-        finalString += alphabet.charAt(Math.floor(Math.random() * alphabet.length))
+    for (let i = 0; i < length; i++) {
+        finalString += alphabet.charAt(
+            Math.floor(Math.random() * alphabet.length),
+        );
     }
 
     return finalString;
 }
 
-export { isArray, randomString }
+export { isArray, randomString };

@@ -1,8 +1,5 @@
-import { randomInt } from './number'
-import { isArray, randomString } from './string'
+// Copyright 2022 Octomatize
+import { randomInt } from './number';
+import { isArray, randomString } from './string';
 
-export {
-    randomInt,
-    isArray,
-    randomString
-}
+export { randomInt, isArray, randomString };
