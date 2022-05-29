@@ -63,4 +63,13 @@ function trim(value: string, type = 1): string {
     }
 }
 
-export { randomString, isString, stringToArray, trim };
+/**
+ * Verify if the passed value is a date.
+ * @param value Value to be verified
+ * @returns boolean
+ */
+function isDate(value: unknown): boolean {
+    return value instanceof Date && !Number.isNaN(value);
+}
+
+export { randomString, isString, stringToArray, trim, isDate };

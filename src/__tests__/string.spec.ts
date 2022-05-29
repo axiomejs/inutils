@@ -1,5 +1,5 @@
 // Copyright 2022 Octomatize
-import { isString, randomString, stringToArray, trim } from '../string';
+import { isDate, isString, randomString, stringToArray, trim } from '../string';
 
 describe('string', () => {
     describe('randomString()', () => {
@@ -94,6 +94,20 @@ describe('string', () => {
             expect(trim(' axiomejs the best js framework ', 4)).toBe(
                 ' axiomejs the best js framework',
             );
+        });
+    });
+
+    describe('isDate()', () => {
+        it('should return true when pass a date', () => {
+            expect.assertions(1);
+
+            expect(isDate(new Date('01/01/2000'))).toBe(true);
+        });
+
+        it('should return false when pass a number', () => {
+            expect.assertions(1);
+
+            expect(isDate(1)).toBe(false);
         });
     });
 });

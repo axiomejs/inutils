@@ -8,7 +8,7 @@ import {
     isGreaterOrEqualThan,
     isNumber,
 } from './number';
-import { randomString, isString, stringToArray, trim } from './string';
+import { randomString, isString, stringToArray, trim, isDate } from './string';
 
 export {
     randomInt,
@@ -25,4 +25,5 @@ export {
     inArray,
     countOccurrences,
     trim,
+    isDate,
 };
