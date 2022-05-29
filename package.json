@@ -1,5 +1,5 @@
 {
-  "name": "inutils",
+  "name": "@axiomejs/inutils",
   "version": "1.0.0",
   "description": "Give utilities to your project without a lot of work.",
   "main": "index.js",
