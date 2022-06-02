@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axiomejs/inutils.git"
+    "url": "https://github.com/axiomejs/inutils"
   },
   "bugs": {
     "url": "https://github.com/axiomejs/inutils/issues"
