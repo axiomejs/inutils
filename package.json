@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/axiomejs/inutils#readme",
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "release": {
     "branches": ["main"],
